@@ -37,7 +37,6 @@ Open the `index.html` file in a web browser to view the personal profile webpage
 The project directory structure is as follows:
 \`\`\`
 project_root/
-│
 ├── assets/
 │   ├── styles/
 │   │   └── styles.css
@@ -46,7 +45,6 @@ project_root/
 │   │   └── scroll.js
 │   └── image/
 │       └── profile.png
-│
 ├── index.html
 └── README.md
 \`\`\`
