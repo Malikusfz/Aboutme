@@ -24,18 +24,18 @@ This project is a personal profile webpage for Malikus Syafaadi Nurfaza, a third
 ## Installation
 To use this project, you can simply clone the repository and open the `index.html` file in your web browser.
 
-\`\`\`bash
+```bash
 git clone <repository_url>
 cd <repository_directory>
 open index.html
-\`\`\`
+```
 
 ## Usage
 Open the `index.html` file in a web browser to view the personal profile webpage. The page includes sections for an introduction, activities, and contacts.
 
 ## Project Structure
 The project directory structure is as follows:
-\`\`\`
+```
 project_root/
 ├── assets/
 │   ├── styles/
@@ -47,7 +47,7 @@ project_root/
 │       └── profile.png
 ├── index.html
 └── README.md
-\`\`\`
+```
 
 - `index.html`: The main HTML file for the webpage.
 - `assets/`: Directory containing styles, scripts, and images.
