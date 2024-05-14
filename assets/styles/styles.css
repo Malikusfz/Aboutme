@@ -1,0 +1,598 @@
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f9f5f6;
+}
+* > p {
+  color: #3d3c42;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  background-color: #f2bed1;
+  z-index: 100;
+  width: 100%;
+}
+
+header > * {
+  font-size: 18px;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+  background-color: #f2bed1;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px 50px 0 10px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding-left: 20px;
+  border: solid #eeeeee;
+  background-color: #f2bed1;
+}
+
+#bio {
+  width: 500px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 3px solid #f8e8ee;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f2bed1;
+}
+
+.profile.card {
+  text-align: center;
+  background-color: #f2bed1;
+}
+
+figure {
+  background-color: #f2bed1;
+}
+
+#bio table {
+  width: 100%;
+  background-color: #f2bed1;
+  text-align: center;
+}
+.table-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically  */
+  height: 200px; /* Adjust height as needed */
+}
+
+td {
+  text-align: center; /* Center the text within cells */
+}
+#bio table td,
+tbody,
+tr {
+  align-items: center;
+  padding: 0;
+  font-size: 35px;
+  background-color: #f2bed1;
+  text-align: center; /* Aligns text horizontally to the center */
+  vertical-align: middle;
+}
+
+#activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  width: 1100px;
+}
+
+#activity img {
+  display: flex;
+  justify-content: space-between;
+  outline: 6px solid #393e46;
+  width: 300px;
+  height: 200px;
+}
+
+.my.act {
+  text-align: center;
+}
+
+body main article {
+  flex: 1;
+  text-align: center;
+}
+
+#the_activity {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#himalkom,
+#cpsc,
+#ittoday {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  border: solid #b8b8b8;
+  background-color: #f8e8ee;
+}
+
+#himalkom:hover,
+#cpsc:hover,
+#ittoday:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+#himalkom img,
+#cpsc img,
+#ittoday img {
+  width: 300px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#himalkom h3,
+#cpsc h3,
+#ittoday h3 {
+  text-align: justify;
+  margin-top: 30px;
+}
+
+#himalkom p,
+#cpsc p,
+#ittoday p {
+  display: flex;
+  text-align: justify;
+  hyphens: auto;
+  top: 0;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  border: solid black;
+  background-color: #f8e8ee;
+  margin: 0;
+  flex-grow: 1;
+}
+
+footer p {
+  display: flex;
+  margin-right: 30px;
+  width: fit-content;
+  background-color: #f8e8ee;
+}
+
+footer #contacts ul {
+  display: flex;
+  margin-left: 30px;
+  list-style-type: none;
+  padding: 0;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8e8ee;
+}
+
+footer #contacts ul li a p {
+  display: flex;
+  margin: 0;
+  text-align: center;
+  background-color: #f8e8ee;
+}
+#contacts {
+  background-color: #f8e8ee;
+}
+img {
+  height: auto;
+  background-color: #f8e8ee;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.Introduction {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex: 1;
+}
+
+:root {
+  font-size: 20px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.intro.card {
+  display: flex;
+  height: 400px;
+  width: 700px;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 50px;
+  border-radius: 20px;
+  background-color: #f8e8ee;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  border: solid rgb(193, 176, 176);
+}
+
+.intro.card h2 {
+  display: flex;
+  font-size: 40px;
+  background-color: #f8e8ee;
+}
+
+.intro.card p {
+  display: flex;
+  background-color: #f8e8ee;
+  hyphens: auto;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.card img {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.card table {
+  display: flex;
+  width: 100%;
+}
+
+.card table td {
+  display: flex;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.gg-instagram {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px black;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  background-color: #f8e8ee;
+}
+
+.gg-instagram::after,
+.gg-instagram::before {
+  display: flex;
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid black;
+}
+
+.gg-instagram::after {
+  display: flex;
+  border: 2px solid black;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  top: 3px;
+}
+
+.gg-instagram::before {
+  display: flex;
+  border: solid black;
+  border-radius: 3px;
+  width: 2px;
+  height: 2px;
+  background: currentColor;
+  right: 1px;
+  top: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    width: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*   .Introduction {
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  header {
+    display: none;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .Introduction {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* Use flexbox for the container element */
+  #content_1 {
+    display: flex;
+    /* /*flex-direction: column;
+    align-items: center; */
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    margin: 0;
+  }
+  /* Use flexbox for the intro card element */
+  .intro.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding-bottom: 50px;
+    margin: 0 0 0 -5px;
+  }
+
+  /*  
+  .intro.card h2 {
+    text-align: center;
+  } */
+
+  /* Use flexbox for the parent container element */
+  #parent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Use flexbox for the activity element */
+  #activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* margin: 20px; */
+  }
+
+  /* No need to change the h3 elements */
+  #himalkom h3,
+  #cpsc h3,
+  #ittoday h3 {
+    text-align: justify;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  /* No need to change the img elements */
+  #himalkom img,
+  #cpsc img,
+  #ittoday img {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* No need to change the p elements */
+  #himalkom p,
+  #cpsc p,
+  #ittoday p {
+    text-align: justify;
+    margin-top: 30px;
+    font-size: medium;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 30px;
+    hyphens: auto;
+  }
+
+  /* Use flexbox for the the activity element */
+  #the_activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  /* Use flexbox for the card element */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+    background-color: #f2bed1;
+  }
+
+  /* No need to change the img and figure elements */
+  .card img,
+  figure {
+    margin: auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    background-color: #f2bed1;
+  }
+  figure {
+    background-color: #f2bed1;
+  }
+
+  /* Use flexbox for the bio element */
+  #bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    width: 300px;
+    margin: 30px auto;
+    overflow: hidden;
+  }
+
+  /* No need to change the the activity element */
+  #the_activity {
+    right: 20px;
+  }
+
+  /* Use flexbox for the profile card and bio elements */
+  .profile.card,
+  #bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    order: -1;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  /* Use flexbox for the footer element */
+  footer {
+    display: flex;
+    width: 100%;
+    align-content: center;
+  }
+
+  /* No need to change the p element */
+  footer p {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    font-weight: bolder;
+    align-content: center;
+  }
+
+  /* Use flexbox for the contacts element */
+  footer li {
+    display: none;
+  }
+  #contacts {
+    display: none;
+  }
+}
+
+/* No need to change the gg-mail element and its pseudo-element */
+.gg-mail,
+.gg-mail::after {
+  border: solid black;
+  display: block;
+  box-sizing: border-box;
+  height: 20px;
+  border: 2px solid;
+  background-color: #f8e8ee;
+}
+.gg-mail {
+  position: relative;
+  border: solid black;
+  overflow: hidden;
+  transform: scale(var(--ggs, 1));
+  width: 25px;
+  border-radius: 2px;
+}
+.gg-mail::after {
+  position: relative;
+  border: solid black;
+  content: "";
+  position: flex;
+  border-radius: 3px;
+  width: 25px;
+  transform: rotate(-45deg);
+  bottom: -5px;
+  left: 0;
+  top: -11px;
+}
